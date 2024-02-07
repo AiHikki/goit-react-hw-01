@@ -1,7 +1,7 @@
 import styles from './FriendListItem.module.css';
 import clsx from 'clsx';
 
-export const FriendListItem = ({ avatar, name, isOnline }) => {
+export const FriendListItem = ({ friend: { avatar, isOnline, name } }) => {
   return (
     <div className={styles.item}>
       <img className={styles.avatar} src={avatar} alt="Avatar" width="80" />
